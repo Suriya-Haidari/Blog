@@ -1,0 +1,259 @@
+@media screen and (min-width: 769px) {
+  .navbar-toggle-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  #closeModalBtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar-container {
+    display: none;
+  }
+  .web-title {
+    margin-left: 50%;
+  }
+  .navbar-toggle-mobile button i.fa-bars {
+    display: none;
+  }
+
+  .navbar-toggle-mobile button i.fa-times {
+    display: inline-block;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 80%;
+    overflow: auto;
+    background-color: #fff;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    padding: 1rem;
+    height: 50%;
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    height: 100%;
+    margin-top: 10rem;
+  }
+
+  .icons li {
+    list-style-type: none;
+    margin: 1rem 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+.wrapper-container {
+  background: var(--header-Background);
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  width: 1rem;
+}
+.hr {
+  height: 0.1px;
+  width: 100rem;
+  position: absolute;
+  transform: rotate(90deg);
+  left: -38rem;
+  z-index: 99;
+  background: var(--header-Background);
+}
+.icons {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  color: var(--text-color);
+  height: 5rem;
+  position: fixed;
+  top: 3rem;
+  left: 0;
+}
+
+.contentt {
+  color: red;
+}
+
+.icons i {
+  color: var(--text-color);
+}
+.icons li {
+  list-style-type: none;
+  margin: 1.5rem;
+}
+
+.icons li a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.icons li a span {
+  color: var(--text-color);
+}
+
+.icons i,
+.icons span {
+  font-size: 1.3rem;
+}
+
+.icons .nav-item {
+  margin-left: 1rem;
+}
+
+.web-title {
+  display: flex;
+  font-family: Brush Script MT, cursive;
+  justify-content: flex-start;
+  margin-top: -0.5rem;
+  margin-left: 3rem;
+  position: fixed;
+}
+
+.wave-container {
+  position: relative;
+  display: none;
+}
+
+.wave-border,
+.wave-border-second {
+  border: none;
+  position: absolute;
+  top: 0;
+  height: 20px;
+  width: 99.8%;
+  overflow: hidden;
+}
+.wave-border::after,
+.wave-border-second::after {
+  content: "";
+  position: absolute;
+  color: aqua;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background: #333;
+  border-radius: 50%;
+  animation: wave 3s linear infinite;
+  z-index: -1;
+}
+
+.wave-border {
+  z-index: 1;
+}
+
+.wave-border::before,
+.wave-border-second::before {
+  content: "";
+  position: absolute;
+  color: #222234;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 20px;
+  background: var(--header-Background);
+  border-radius: 0 0 50% 50%;
+  animation: wave 3s linear infinite;
+}
+
+.theme-switcher {
+  display: flex;
+  width: 1rem;
+  height: 1rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 2rem;
+  background: var(--header-Background);
+}
+.theme-switcher button {
+  width: 6rem;
+  height: 3rem;
+  border-radius: 1rem;
+  background: var(--header-Background);
+  color: var(--btn-color);
+  transition: var(--transition);
+  border: none;
+  animation: slideLeft 1s forwards;
+}
+
+.theme-switcher button:hover {
+  transition: var(--transition);
+  color: var(--btn-color-hover);
+  cursor: pointer;
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 2rem;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.header ul li {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(-99%);
+  }
+  100% {
+    transform: translateX(99%);
+  }
+}

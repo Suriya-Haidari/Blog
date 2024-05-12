@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Theme Switcher</title>
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/responsiveness.css" />
+  </head>
+
+  <body>
+    <div class="theme-switcher">
+      <button id="lightThemeBtn"><i class="fa-regular fa-moon"></i></button>
+      <button id="darkThemeBtn"><i class="fa-solid fa-moon"></i></button>
+    </div>
+    <br /><br />
+    <h1 class="web-title title_1">BlogTrends</h1>
+    <br />
+    <div class="navbar-toggle-mobile">
+      <button id="toggleIconsBtnMobile">
+        Menw
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <br /><br /><br /><br /><br />
+    <div id="navbarModal" class="modal hidden">
+      <div class="modal-content">
+        <button id="closeModalBtn">&times;</button>
+        <br />
+        <ul class="icons">
+          <li>
+            <a href="/items" data-ajax data-container="content">
+              <i class="fas fa-home"></i> <span class="nav-item">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="/newItem" data-ajax data-container="content">
+              <i class="far fa-plus-square"></i>
+              <span class="nav-item">Post</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/new" data-ajax data-container="content">
+              <i class="far fa-plus-square"></i>
+              <span class="nav-item">Story</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="/saved-items" data-ajax data-container="content">
+              <i class="fas fa-bookmark"></i>
+              <span class="nav-item">Saved</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="">
+              <i class="fas fa-search inavailable__icon"></i>
+              <span class="nav-item">Search</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/preventReloading.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleIconsBtnMobile = document.getElementById(
+          "toggleIconsBtnMobile"
+        );
+        const navbarModal = document.getElementById("navbarModal");
+        const closeModalBtn = document.getElementById("closeModalBtn");
+
+        toggleIconsBtnMobile.addEventListener("click", function () {
+          navbarModal.style.display = "block"; // Show the modal
+        });
+
+        closeModalBtn.addEventListener("click", function () {
+          navbarModal.style.display = "none"; // Hide the modal
+        });
+      });
+    </script>
+  </body>
+</html>

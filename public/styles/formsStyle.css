@@ -1,0 +1,58 @@
+.wrapper-form-container {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.add-new-item {
+  display: flex;
+  flex-direction: column;
+}
+.add-new-item textarea {
+  padding: 1rem;
+}
+.add-new-item input {
+  height: 2.5rem;
+  padding-left: 1rem;
+}
+.add-new-item input,
+textarea {
+  border-radius: 1rem;
+  border: 1px solid;
+  /* width: 70%; */
+}
+
+.add-new-item textarea {
+  height: 3rem;
+}
+.add-new-item label {
+  margin-bottom: 1rem;
+}
+#image-preview2,
+#image-preview {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.add-new-item button {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 2rem;
+  background: conic-gradient(
+    from 45deg,
+    rgba(177, 123, 102, 0.568),
+    rgb(255, 255, 189),
+    aqua,
+    rgb(149, 255, 158),
+    rgb(255, 205, 255),
+    rgb(255, 174, 174)
+  );
+}
+.post__foem__buttom {
+  margin-left: auto;
+}
+.post__foem__buttom button:hover {
+  background-color: aliceblue;
+}

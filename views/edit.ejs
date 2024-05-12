@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Item</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/responsiveness.css" />
+    <link rel="stylesheet" href="/styles/formsStyle.css" />
+  </head>
+  <body class="light-theme">
+    <div class="content" id="content">
+      <div class="wrapper-form-container">
+        <form
+          onsubmit="handeSubmit()"
+          action="/edit/<%= item.id %>?_method=PUT"
+          method="POST"
+          class="new-item add-new-item"
+          id="edit-form"
+          enctype="multipart/form-data"
+        >
+          <input type="hidden" name="_method" value="PUT" />
+          <label for="title">new Title</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            value="<%= item ? item.title : '' %>"
+            required
+          />
+
+          <label for="description">Description:</label>
+
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="5"
+            required
+          >
+        <%= item.description %>
+    </textarea
+          >
+
+          <!-- Preview image -->
+          <label for="image-preview">Current Image:</label>
+          <img
+            id="image-preview2"
+            src="<%= item.image %>"
+            alt="last"
+            onchange="previewImage2(event, '<%= item.image %>')"
+            width="370px"
+            height="220px"
+          />
+
+          <label for="image">Change Image:</label>
+
+          <!-- File input with onchange event -->
+          <input
+            type="file"
+            name="image"
+            accept="image/*"
+            onchange="previewImage2(event)"
+          />
+
+          <input type="hidden" name="oldImage" value="<%= item.image %>" />
+
+          <!-- Display "Edited" status and timestamp if item is edited -->
+
+          <div>
+            <button type="submit" id="update-button">Update</button>
+            <a href=".."> <button type="button">Back</button> </a>
+          </div>
+
+          <% if (item.edited) { %>
+          <p>Edited <%= timeDifference(item.lastEdited) %> ago</p>
+          <% } %>
+        </form>
+      </div>
+      <%- include("partials/footer.ejs") %>
+    </div>
+
+    <script src="/js/script.js" defer></script>
+  </body>
+</html>

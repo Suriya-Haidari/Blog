@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <title>New Post</title>
+    <link rel="stylesheet" href="/styles/responsiveness.css" />
+    <link rel="stylesheet" href="/styles/formsStyle.css" />
+  </head>
+  <body class="light-theme">
+    <div class="content" id="content">
+      <div class="wrapper-form-container">
+        <h1>Create New Post</h1>
+
+        <form
+          onsubmit="handeSubmit()"
+          action="/submit/submit"
+          method="POST"
+          class="new-item form add-new-item"
+          enctype="multipart/form-data"
+        >
+          <label for="title">Your Full Name: </label>
+          <input
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Full Name"
+            required
+          />
+          <br />
+          <label for="content">Description:</label>
+          <textarea
+            name="description"
+            id="content"
+            placeholder="Content"
+            required
+          ></textarea>
+          <br />
+
+          <label for="image">Image:</label>
+
+          <img
+            id="image-preview"
+            src="/uploads/defaultImg.png"
+            alt="Image Preview"
+            width="370px"
+            height="220px"
+          />
+
+          <input
+            type="file"
+            id="image"
+            name="image"
+            accept="image/*"
+            required
+            onchange="previewImage(event)"
+          />
+          <br />
+          <div class="post__foem__buttom">
+            <button
+              type="submit"
+              class="create-btn btn"
+              data-container="content"
+            >
+              Upload Post
+            </button>
+            <a href=".."> <button type="button">Canccel</button> </a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br />
+    <br />
+    <script src="/js/script.js"></script>
+    <script src="/js/preventReloading.js"></script>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+.top-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 1rem;
+  align-items: center;
+  margin-top: -5rem;
+}
+
+.parent-container {
+  width: 55%;
+  display: flex;
+  margin-top: -4rem;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+.contentt .title {
+  color: aliceblue;
+  position: fixed;
+  display: flex;
+  font-size: 2rem;
+  margin: 2rem;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  top: 4rem;
+}
+.story {
+  flex-shrink: 0;
+  width: 100px;
+  text-align: center;
+  cursor: pointer;
+  transition: width 0.3s, border-color 0.3s;
+}
+
+.story.expanded {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 800px;
+  height: auto;
+  z-index: 9999;
+  background-color: var(--header-Background);
+  color: white;
+  padding-top: 165px;
+  padding-bottom: 165px;
+  padding-left: 200px;
+  padding-right: 200px;
+
+  overflow-y: auto; /* Add overflow-y to enable scrolling if content exceeds height */
+}
+
+.story.expanded .story-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.contentt {
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  overflow-wrap: break-word;
+  color: var(--text-color);
+}
+.add-story-btn {
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-top: 1px;
+  padding: 28px;
+  border-radius: 1rem;
+  background-color: var(--btn-background);
+  margin-left: 1rem;
+  margin-right: 1em;
+  color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  border-radius: 50%;
+  transition: var(--transition);
+  animation: slideLeft 1s forwards;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-image img {
+  border: 2px solid var(--story-border);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  transition: border-color 0.3s;
+}
+
+.story:hover .story-image img {
+  border-color: var(--story-border);
+}
+.story-image img.border-color {
+  border-color: var(--story-border);
+}
+
+.story.visited .story-image img {
+  border-color: transparent;
+}
+
+.story.expanded .story-image img {
+  border-color: transparent;
+}
+
+/* Expanded state */
+.story.expanded {
+  width: 200px;
+  border-color: white;
+}
+
+/* Visited state */
+.story.visited {
+  border-color: gray;
+}
+
+/* Story content */
+.story-content {
+  text-align: center;
+  display: none;
+}
+
+.story.expanded .story-content {
+  display: block;
+  color: black;
+}
+
+.story-content button {
+  margin-top: 5px;
+}
+
+.parent-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.parent-container::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.parent-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+.no-border {
+  border-color: transparent !important;
+}
+
+.progress-bar-container {
+  position: relative;
+  height: 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--progress-color);
+  transition: width 1s linear;
+}
+
+.add-story-btn:hover {
+  transition: var(--transition);
+  background: var(--header-Background);
+  color: var(-btn-color);
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

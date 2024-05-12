@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New Story</title>
+    <link rel="stylesheet" href="/styles/style.css" />
+  </head>
+  <body>
+    <link rel="stylesheet" href="/styles/responsiveness.css" />
+    <link rel="stylesheet" href="/styles/formsStyle.css" />
+
+    <div class="content" id="content">
+      <div class="wrapper-form-container">
+        <h1>Create New Story</h1>
+
+        <form
+          onsubmit="handeSubmit()"
+          action="/newstory"
+          method="POST"
+          enctype="multipart/form-data"
+          class="add-new-item"
+        >
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" rows="5" required></textarea
+          ><br /><br />
+
+          <label for="image">Upload Image:</label>
+          <img
+            id="image-preview"
+            src="/uploads/defaultImg.png"
+            alt="Image Preview"
+            width="370px"
+            height="220px"
+          />
+
+          <input
+            type="file"
+            id="image"
+            name="image"
+            accept="image/*"
+            onchange="previewImage(event)"
+          /><br /><br />
+
+          <div class="post__foem__buttom">
+            <button type="submit">Submit</button>
+            <a href=".."> <button type="button">Back</button> </a>
+          </div>
+          <br /><br /><br /><br />
+        </form>
+      </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/stories.js"></script>
+  </body>
+</html>
