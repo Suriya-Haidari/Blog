@@ -125,8 +125,9 @@
   margin-top: -0.5rem;
   margin-left: 3rem;
   position: fixed;
+  z-index: 10;
+  background: var(--header-Background);
 }
-
 .wave-container {
   position: relative;
   display: none;
