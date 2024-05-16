@@ -1,5 +1,5 @@
 .wrapper-form-container {
-  width: 50%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -19,7 +19,6 @@
 textarea {
   border-radius: 1rem;
   border: 1px solid;
-  /* width: 70%; */
 }
 
 .add-new-item textarea {
@@ -28,18 +27,20 @@ textarea {
 .add-new-item label {
   margin-bottom: 1rem;
 }
+
 #image-preview2,
 #image-preview {
   margin-left: auto;
   margin-right: auto;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  width: 100%;
+  width: 70%;
 }
 
 .add-new-item button {
   width: 8rem;
   height: 3rem;
+  margin: 0.5rem;
   border-radius: 2rem;
   background: conic-gradient(
     from 45deg,
