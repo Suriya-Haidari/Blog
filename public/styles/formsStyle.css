@@ -1,7 +1,8 @@
 .wrapper-form-container {
-  width: 90%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -9rem;
 }
 
 .add-new-item {
@@ -57,4 +58,17 @@ textarea {
 }
 .post__foem__buttom button:hover {
   background-color: aliceblue;
+}
+
+@media screen and (max-width: 624px) {
+  .wrapper-form-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .add-new-item button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
