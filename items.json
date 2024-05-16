@@ -5,26 +5,5 @@
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sunt ipsam repellendus dolore provident, hic dolor omnis saepe pariatur nulla facilis aut quasi libero, excepturi illum voluptatibus assumenda? Totam, et!\r\n",
     "image": "/uploads/graduated.png",
     "createdTime": "2024-05-12T06:47:26.555Z"
-  },
-  {
-    "id": 1,
-    "title": "Suriya Haidari",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti quo ducimus quasi officia modi exercitationem! Repellendus perspiciatis minus, unde enim modi dolorem obcaecati, possimus omnis assumenda impedit explicabo cupiditate.",
-    "image": "/uploads/carstore.png",
-    "createdTime": "2024-05-16T09:37:28.143Z"
-  },
-  {
-    "id": 2,
-    "title": "Maryam Noori",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti quo ducimus quasi officia modi exercitationem! Repellendus perspiciatis minus, unde enim modi dolorem obcaecati, possimus omnis assumenda impedit explicabo cupiditate.",
-    "image": "/uploads/follow_1.png",
-    "createdTime": "2024-05-16T09:39:01.464Z"
-  },
-  {
-    "id": 3,
-    "title": "Ayesha Mohammadi",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Error corrupti quo ducimus quasi officia modi exercitationem! Repellendus perspiciatis minus, unde enim modi dolorem obcaecati, possimus omnis assumenda impedit explicabo cupiditate.",
-    "image": "/uploads/follow-3_1.png",
-    "createdTime": "2024-05-16T09:39:43.621Z"
   }
 ]
