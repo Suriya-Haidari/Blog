@@ -32,13 +32,13 @@
     width: 50%;
     height: 80%;
     overflow: auto;
-    background-color: #fff;
+    background-color: var(--header-Background);
     margin: auto;
     padding: 1rem;
   }
 
   .modal-content {
-    background-color: #fefefe;
+    background-color: var(--header-Background);
     padding: 1rem;
     height: 50%;
   }
@@ -102,11 +102,11 @@
 }
 
 .icons li a {
-  color: var(--text-color);
+  color: var(--icon-color);
   text-decoration: none;
 }
 .icons li a span {
-  color: var(--text-color);
+  color: var(--icon-color);
 }
 
 .icons i,
