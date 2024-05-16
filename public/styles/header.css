@@ -189,6 +189,8 @@
 .theme-switcher button {
   width: 6rem;
   height: 3rem;
+  position: relative;
+  z-index: 10;
   border-radius: 1rem;
   background: var(--header-Background);
   color: var(--btn-color);
