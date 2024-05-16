@@ -124,7 +124,7 @@
   justify-content: flex-start;
   margin-top: -0.5rem;
   margin-left: 3rem;
-  position: absolute;
+  position: fixed;
   z-index: 10;
   background: var(--header-Background);
 }
