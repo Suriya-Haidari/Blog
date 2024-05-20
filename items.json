@@ -10,21 +10,21 @@
     "id": 1,
     "title": "Suriya Haidari",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolores. Rerum autem officiis, excepturi nulla accusamus, aliquam placeat esse cumque repellendus repellat ex, sapiente maxime ipsa dolorum exercitationem animi harum!",
-    "image": "/uploads/follow.png",
+    "image": "/uploads/follow_1.png",
     "createdTime": "2024-05-16T10:37:12.346Z"
   },
   {
     "id": 2,
     "title": "Mia Wilson",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sunt ipsam repellendus dolore provident, hic dolor omnis saepe pariatur nulla facilis aut quasi libero, excepturi illum voluptatibus assumenda? Totam, et!",
-    "image": "/uploads/follow-3.png",
+    "image": "/uploads/follow-3_1.png",
     "createdTime": "2024-05-20T07:17:38.212Z"
   },
   {
     "id": 3,
     "title": "Amelia Clark",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sunt ipsam repellendus dolore provident, hic dolor omnis saepe pariatur nulla facilis aut quasi libero, excepturi illum voluptatibus assumenda? Totam, et!",
-    "image": "/uploads/follow-2.png",
+    "image": "/uploads/follow-2_1.png",
     "createdTime": "2024-05-20T07:18:40.284Z"
   }
 ]
