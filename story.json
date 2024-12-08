@@ -10,5 +10,29 @@
     "id": "story_1715497818478",
     "content": "it is a test",
     "image": "follow-3.png"
+  },
+  {
+    "timestamp": 1733569356754,
+    "id": "story_1733569356754",
+    "content": "test",
+    "image": "follow-2_1_1.png"
+  },
+  {
+    "timestamp": 1733569394723,
+    "id": "story_1733569394723",
+    "content": "test",
+    "image": "follow-4.jpg"
+  },
+  {
+    "timestamp": 1733569421579,
+    "id": "story_1733569421579",
+    "content": "test",
+    "image": "follow-6_1.png"
+  },
+  {
+    "timestamp": 1733640599155,
+    "id": "story_1733640599155",
+    "content": "test story",
+    "image": "first.jpg"
   }
 ]

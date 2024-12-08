@@ -3,7 +3,6 @@
     width: 90%;
     margin-top: 2rem;
   }
-
   .line_1 {
     display: none;
   }
@@ -16,6 +15,9 @@
   }
   .follow-list {
     display: none;
+  }
+  .web-title {
+    position: absolute;
   }
 }
 @media screen and (max-width: 525px) {
@@ -48,17 +50,15 @@
     width: 80%;
   }
 }
-
-/* For tablets and smaller screens */
 @media screen and (max-width: 768px) {
   .wrapper-container {
-    flex-direction: column; /* Change direction to column for tablets */
-    height: auto; /* Remove fixed height */
+    flex-direction: column;
+    height: auto;
   }
 
   .icons {
-    justify-content: center; /* Center the icons horizontally */
-    width: 100%; /* Occupy full width */
+    justify-content: center;
+    width: 100%;
   }
 
   .web-title {

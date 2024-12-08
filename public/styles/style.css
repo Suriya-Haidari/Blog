@@ -241,6 +241,7 @@ span {
 
 .light-theme {
   --transition: all ease 0.5s;
+  --icon-color: #121212;
   --header-Background: #fff;
   --header-color: #3c4048;
   --background-color: #fff;
@@ -261,6 +262,7 @@ span {
 
 .dark-theme {
   --transition: all ease 0.5s;
+  --icon-color: #eaeaea;
   --header-Background: #121212;
   --header-color: #3c4048;
   --background-color: #121212;

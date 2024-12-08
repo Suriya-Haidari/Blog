@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/responsiveness.css" />
   </head>
+  <style>
+    /* Style for active links */
+    .icons a.active {
+      font-weight: bold; /* Keeps bold for link */
+      text-decoration: none; /* Removes underline from the link */
+    }
+
+    /* Specific styling for the text (span) inside active links */
+    .icons a.active span {
+      color: rgb(168, 168, 168); /* Changes only the text color to red */
+    }
+  </style>
 
   <body>
     <div class="theme-switcher">
@@ -16,9 +28,10 @@
     <br /><br />
     <h1 class="web-title title_1">BlogTrends</h1>
     <br />
+
     <div class="navbar-toggle-mobile">
       <button id="toggleIconsBtnMobile">
-        Menw
+        Menu
         <i class="fas fa-bars"></i>
       </button>
     </div>
@@ -30,7 +43,7 @@
         <br />
         <ul class="icons">
           <li>
-            <a href="/items" data-ajax data-container="content">
+            <a href="/" data-ajax data-container="content" class="active">
               <i class="fas fa-home"></i> <span class="nav-item">Home</span>
             </a>
           </li>
@@ -40,21 +53,18 @@
               <span class="nav-item">Post</span>
             </a>
           </li>
-
           <li>
             <a href="/new" data-ajax data-container="content">
               <i class="far fa-plus-square"></i>
               <span class="nav-item">Story</span>
             </a>
           </li>
-
           <li>
             <a href="/saved-items" data-ajax data-container="content">
               <i class="fas fa-bookmark"></i>
               <span class="nav-item">Saved</span>
             </a>
           </li>
-
           <li>
             <a href="">
               <i class="fas fa-search inavailable__icon"></i>
@@ -74,13 +84,39 @@
         );
         const navbarModal = document.getElementById("navbarModal");
         const closeModalBtn = document.getElementById("closeModalBtn");
+        const links = document.querySelectorAll(".icons a");
 
+        // Function to update the active link
+        function setActiveLink() {
+          const currentPath = window.location.pathname; // Get the current path
+          links.forEach((link) => {
+            if (link.getAttribute("href") === currentPath) {
+              link.classList.add("active"); // Add active class to the matching link
+            } else {
+              link.classList.remove("active"); // Remove active class from others
+            }
+          });
+        }
+
+        // Call the function on page load
+        setActiveLink();
+
+        // Show the modal when toggle button is clicked
         toggleIconsBtnMobile.addEventListener("click", function () {
           navbarModal.style.display = "block"; // Show the modal
         });
 
+        // Hide the modal when close button is clicked
         closeModalBtn.addEventListener("click", function () {
           navbarModal.style.display = "none"; // Hide the modal
+        });
+
+        // Update active link when a navbar link is clicked (useful for single-page apps)
+        links.forEach((link) => {
+          link.addEventListener("click", function () {
+            links.forEach((l) => l.classList.remove("active")); // Remove active class
+            this.classList.add("active"); // Add active class to clicked link
+          });
         });
       });
     </script>

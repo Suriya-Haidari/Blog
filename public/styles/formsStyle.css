@@ -2,6 +2,7 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: -7rem;
 }
 
 .add-new-item {
@@ -19,7 +20,6 @@
 textarea {
   border-radius: 1rem;
   border: 1px solid;
-  /* width: 70%; */
 }
 
 .add-new-item textarea {
@@ -30,15 +30,29 @@ textarea {
 }
 #image-preview2,
 #image-preview {
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  justify-content: center; /* Centers the image horizontally */
+  align-items: center; /* Centers the image vertically */
+  margin: 0 auto; /* Centers the container itself */
   border-radius: 1rem;
   margin-bottom: 2rem;
+  overflow: hidden; /* Prevents overflow issues */
+  max-width: 100%; /* Ensures the container fits the screen */
+}
+
+#image-preview2 img,
+#image-preview img {
+  display: block;
+  max-width: none; /* Prevents resizing */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain; /* Ensures the image is fully visible */
+  margin: 0 auto; /* Ensures the image is centered */
 }
 
 .add-new-item button {
   width: 8rem;
   height: 3rem;
+  margin: 0.5rem;
   border-radius: 2rem;
   background: conic-gradient(
     from 45deg,
@@ -55,4 +69,17 @@ textarea {
 }
 .post__foem__buttom button:hover {
   background-color: aliceblue;
+}
+
+@media screen and (max-width: 624px) {
+  .wrapper-form-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 824px) {
+  .add-new-item button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

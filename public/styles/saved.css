@@ -1,21 +1,143 @@
-.saved-items {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin-top: -10rem;
+}
+
+.item-container {
   display: flex;
-  flex-direction: row;
+  margin: 0 4rem;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.image {
-  width: 20%;
-  height: 20%;
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.saved-item {
-  width: 30%;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid red;
+
+.item {
+  font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia,
+    serif;
+  flex-basis: calc(50% - 3rem);
+  width: 44%;
+  margin: 0.3rem 2rem 1rem 0.5rem;
+  border-radius: 2rem;
+  background: var(--item-background);
+  box-shadow: 0 7px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.new-item-form-3 {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  margin-right: 2rem;
+}
+
+.post-title {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.img-Container {
+  display: flex;
+  justify-content: center;
+}
+
+.images {
+  width: 99%;
+  height: auto;
+}
+
+.des {
+  margin: 2rem;
+  width: 90%;
+  font-size: 1rem;
+  font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia,
+    serif;
+  color: var(--text-color);
+}
+
+.icons-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.like-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.like-btn {
+  border: none;
+  padding: 5px;
+}
+
+.like-btn.liked i {
+  color: red;
+}
+
+.comment-btn {
+  border: none;
+  font-size: 1.2rem;
+}
+
+.comments-container {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.comment-item {
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comment-item button {
+  background: transparent;
+  border: none;
+}
+
+/* Responsive design for mobile */
+@media screen and (max-width: 768px) {
+  /* Make item-container full width on small devices */
+  .item-container {
+    margin: 0; /* Remove margin on small screens */
+    width: 99%; /* Ensure the container takes full width */
+    padding: 0; /* Remove padding */
+  }
+
+  .item {
+    flex-basis: 99%; /* Make items take full width */
+    width: 99%; /* Items should take the full width */
+    margin: 0 0 1rem 0; /* Adjust margins */
+    border-radius: 1rem; /* Optional: adjust border radius for smaller screens */
+  }
+
+  .img-Container {
+    width: 99%; /* Make image container full width */
+  }
+
+  .images {
+    width: 99%; /* Ensure image fills its container */
+    height: auto;
+  }
 }
