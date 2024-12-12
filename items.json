@@ -33,14 +33,14 @@
     "id": 3,
     "title": "Amelia Clark",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sunt ipsam repellendus dolore provident, hic dolor omnis saepe pariatur nulla facilis aut quasi libero, excepturi illum voluptatibus assumenda? Totam, et!",
-    "image": "/uploads/follow-4_1.png",
+    "image": "/uploads/follow-4_1.jpg",
     "createdTime": "2024-05-20T07:18:40.284Z"
   },
   {
     "id": 3,
     "title": "Suriya Hidari",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sunt ipsam repellendus dolore provident, hic dolor omnis saepe pariatur nulla facilis aut quasi libero, excepturi illum voluptatibus assumenda? Totam, et!\r\n    ",
-    "image": "/uploads/follow_1.jpg",
+    "image": "/uploads/follow_1.png",
     "createdTime": "2024-12-07T11:05:54.108Z",
     "edited": true,
     "lastEdited": "2024-12-07T11:05:54.108Z"
