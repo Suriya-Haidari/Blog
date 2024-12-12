@@ -2,7 +2,11 @@
   width: 50%;
   margin-left: auto;
   margin-right: auto;
+<<<<<<< HEAD
   margin-top: -7rem;
+=======
+  margin-top: -9rem;
+>>>>>>> eb089d5720ca7b306e2336ae9a731374c561aada
 }
 
 .add-new-item {
@@ -28,6 +32,7 @@ textarea {
 .add-new-item label {
   margin-bottom: 1rem;
 }
+
 #image-preview2,
 #image-preview {
   display: flex;
@@ -36,6 +41,7 @@ textarea {
   margin: 0 auto; /* Centers the container itself */
   border-radius: 1rem;
   margin-bottom: 2rem;
+<<<<<<< HEAD
   overflow: hidden; /* Prevents overflow issues */
   max-width: 100%; /* Ensures the container fits the screen */
 }
@@ -47,6 +53,9 @@ textarea {
   height: auto; /* Maintains aspect ratio */
   object-fit: contain; /* Ensures the image is fully visible */
   margin: 0 auto; /* Ensures the image is centered */
+=======
+  width: 70%;
+>>>>>>> eb089d5720ca7b306e2336ae9a731374c561aada
 }
 
 .add-new-item button {

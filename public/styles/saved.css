@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   margin: 0;
   padding: 0;
@@ -139,5 +140,50 @@ body {
   .images {
     width: 99%; /* Ensure image fills its container */
     height: auto;
+=======
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.img-Container {
+  width: 100%;
+  text-align: center;
+}
+
+.images {
+  width: 100%;
+  height: auto;
+}
+
+.comment-container {
+  margin-left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .item {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .img-Container {
+    width: 80%;
+  }
+
+  .images {
+    width: 100%;
+  }
+
+  .comment-container {
+    margin-left: 0;
+>>>>>>> eb089d5720ca7b306e2336ae9a731374c561aada
   }
 }
