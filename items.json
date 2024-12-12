@@ -1,7 +1,6 @@
 [
   {
     "id": 0,
-<<<<<<< HEAD
     "title": "Suriya Haidari",
     "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, dolores. Rerum autem officiis, excepturi nulla accusamus, aliquam placeat esse cumque repellendus repellat ex, sapiente maxime ipsa dolorum exercitationem animi harum!",
     "image": "/uploads/follow_1.png",
@@ -24,7 +23,6 @@
   },
   {
     "id": 2,
-=======
     "title": "Evely Turner",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sunt ipsam repellendus dolore provident, hic dolor omnis saepe pariatur nulla facilis aut quasi libero, excepturi illum voluptatibus assumenda? Totam, et!\r\n",
     "image": "/uploads/graduated.png",
@@ -46,12 +44,10 @@
   },
   {
     "id": 3,
->>>>>>> eb089d5720ca7b306e2336ae9a731374c561aada
     "title": "Amelia Clark",
     "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore sunt ipsam repellendus dolore provident, hic dolor omnis saepe pariatur nulla facilis aut quasi libero, excepturi illum voluptatibus assumenda? Totam, et!",
     "image": "/uploads/follow-2_1.png",
     "createdTime": "2024-05-20T07:18:40.284Z"
-<<<<<<< HEAD
   },
   {
     "id": 3,
@@ -61,7 +57,5 @@
     "createdTime": "2024-12-07T11:05:54.108Z",
     "edited": true,
     "lastEdited": "2024-12-07T11:05:54.108Z"
-=======
->>>>>>> eb089d5720ca7b306e2336ae9a731374c561aada
   }
 ]
