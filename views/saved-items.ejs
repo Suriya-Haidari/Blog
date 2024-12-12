@@ -52,11 +52,17 @@
             <div class="icons-container">
               <div class="like-container">
                 <button
-                  class="like-btn <% if (item.liked) { %>liked<% } %>"
+                  class="like-btn <% if (items[i].liked) { %>liked<% } %>"
                   data-index="<%= i %>"
+                  aria-label="Like this post"
                 >
-                  <i class="fa-heart <% if (!item.liked) { %>far<% } %>"></i>
+                  <% if (items[i].liked) { %>
+                  <i class="fas fa-heart"></i>
+                  <% } else { %>
+                  <i class="far fa-heart"></i>
+                  <% } %>
                 </button>
+
                 <span class="like-count"><%= item.likes || 0 %> likes</span>
               </div>
               <button class="comment-btn" data-index="<%= i %>">

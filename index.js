@@ -26,7 +26,6 @@ const generateItemId = () => {
   lastItemId++;
   return lastItemId;
 };
-
 app.set("view engine", "ejs");
 
 app.use((req, res, next) => {

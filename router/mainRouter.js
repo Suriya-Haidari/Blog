@@ -205,6 +205,10 @@ const mainRouter = (sharedItems) => {
     res.render("new-post");
   });
 
+  router.get("/search", (req, res) => {
+    res.render("search");
+  });
+
   return router;
 };
 

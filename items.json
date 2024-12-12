@@ -6,9 +6,10 @@
     "image": "/uploads/follow_1.png",
     "createdTime": "2024-05-16T10:37:12.346Z",
     "liked": true,
-    "likes": 1,
+    "likes": 10,
     "comments": [
-      "hi"
+      "hi",
+      "test comment"
     ]
   },
   {
