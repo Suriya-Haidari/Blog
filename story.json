@@ -15,7 +15,7 @@
     "timestamp": 1733569356754,
     "id": "story_1733569356754",
     "content": "test",
-    "image": "follow-2_1_1.png"
+    "image": "follow-2_1.png"
   },
   {
     "timestamp": 1733569394723,
@@ -27,12 +27,12 @@
     "timestamp": 1733569421579,
     "id": "story_1733569421579",
     "content": "test",
-    "image": "follow-6_1.png"
+    "image": "follow-6.png"
   },
   {
     "timestamp": 1733640599155,
     "id": "story_1733640599155",
     "content": "test story",
-    "image": "first.jpg"
+    "image": "follow-5.jpg"
   }
 ]
